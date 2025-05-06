@@ -4,8 +4,8 @@ document.addEventListener('DOMContentLoaded', function() {
         1: {
             home: "España",
             away: "Colombia",
-            homeScore: 2, // Resultado manual
-            awayScore: 1, // Resultado manual
+            homeScore: 0, // Resultado manual
+            awayScore: 0, // Resultado manual
             homeLogo: "img/Escudo-España.png",
             awayLogo: "img/Escudo-Colombia.png",
             date: "Miércoles 9 de Abril, 2025",
@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', function() {
             home: "Italia",
             away: "Brasil",
             homeScore: 0,
-            awayScore: 3,
+            awayScore: 0,
             homeLogo: "img/Escudo-Italia.png",
             awayLogo: "img/Escudo-Brasil.png",
             date: "Miércoles 9 de Abril, 2025",
@@ -34,8 +34,8 @@ document.addEventListener('DOMContentLoaded', function() {
         3: {
             home: "México",
             away: "Países Bajos",
-            homeScore: 1,
-            awayScore: 1,
+            homeScore: 0,
+            awayScore: 0,
             homeLogo: "img/Escudo-Mexico.png",
             awayLogo: "img/Escudo-PaisesBajos.png",
             date: "Miércoles 9 de Abril, 2025",
@@ -46,11 +46,13 @@ document.addEventListener('DOMContentLoaded', function() {
             homeLineup: ["Ochoa", "J. Sánchez", "Montes", "Vásquez", "Gallardo", "Edson Álvarez", "Luis Chávez", "Tecatito", "Lozano", "Vega", "Jiménez"],
             awayLineup: ["Bijlow", "Dumfries", "Van Dijk", "De Ligt", "Aké", "De Jong", "Koopenmeiners", "Berghuis", "Gakpo", "Depay", "Bergwijn"]
         },
+
+        
         4: {
             home: "Croacia",
             away: "Bélgica",
-            homeScore: 2,
-            awayScore: 2,
+            homeScore: 0,
+            awayScore: 0,
             homeLogo: "img/Escudo-Croacia.png",
             awayLogo: "img/Escudo-Belgica.png",
             date: "Miércoles 9 de Abril, 2025",
@@ -61,10 +63,30 @@ document.addEventListener('DOMContentLoaded', function() {
             homeLineup: ["Livaković", "Juranović", "Gvardiol", "Šutalo", "Sosa", "Modrić", "Brozović", "Kovačić", "Pašalić", "Perišić", "Kramarić"],
             awayLineup: ["Courtois", "Meunier", "Vertonghen", "Alderweireld", "Castagne", "Tielemans", "Onana", "De Bruyne", "Trossard", "Lukaku", "Doku"]
         },
+
+        
         5: {
             home: "Marruecos",
             away: "Ecuador",
-            homeScore: 1,
+            homeScore: 0,
+            awayScore: 0,
+            homeLogo: "img/Escudo-Marruecos.png",
+            awayLogo: "img/Escudo-Ecuador.png",
+            date: "Miércoles 9 de Abril, 2025",
+            time: "21:00",
+            stadium: "Estadio Ibn Batouta, Tánger",
+            referee: "Mustapha Ghorbal",
+            weather: "24°C - Noche despejada",
+            homeLineup: ["Bono", "Hakimi", "Aguerd", "Saiss", "Mazraoui", "Amrabat", "Ounahi", "Ziyech", "Boufal", "En-Nesyri", "Aboukhlal"],
+            awayLineup: ["Galíndez", "Preciado", "Torres", "Hincapié", "Estupiñán", "Gruezo", "Caicedo", "Méndez", "Sarmiento", "Plata", "Valencia"]
+        }
+    },
+
+
+   6: {
+            home: "Mar",
+            away: "Ecu",
+            homeScore: 0,
             awayScore: 0,
             homeLogo: "img/Escudo-Marruecos.png",
             awayLogo: "img/Escudo-Ecuador.png",
@@ -77,6 +99,10 @@ document.addEventListener('DOMContentLoaded', function() {
             awayLineup: ["Galíndez", "Preciado", "Torres", "Hincapié", "Estupiñán", "Gruezo", "Caicedo", "Méndez", "Sarmiento", "Plata", "Valencia"]
         }
     };
+
+
+
+    
 
     // Contador para la fecha del partido
     function updateMatchDate() {
