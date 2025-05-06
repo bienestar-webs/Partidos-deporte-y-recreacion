@@ -71,7 +71,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Contador para la fecha del partido
     function updateMatchDate() {
-        const matchDate = new Date(2025, 3, 9);
+        const matchDate = new Date(2025, 5, 7);
         const now = new Date();
         const diffTime = matchDate - now;
         const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
