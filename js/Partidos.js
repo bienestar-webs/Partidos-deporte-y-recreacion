@@ -69,13 +69,21 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     };
 
-    // Contador para la fecha del partido
-    function updateMatchDate() {
-        const matchDate = new Date(2025, 5, 7);
-        const now = new Date();
-        const diffTime = matchDate - now;
-        const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
-        const countdownContainer = document.querySelector('.countdown-container');
+
+
+    
+  // Contador para la fecha del partido (VERSIÓN CORREGIDA)
+function updateMatchDate() {
+    // Corrección: Mes 4 = Mayo (0=Enero, 1=Feb, 2=Mar, 3=Abr, 4=Mayo)
+    const matchDate = new Date(2025, 4, 7);  // 7 de Mayo 2025
+    
+    const now = new Date();
+    const diffTime = matchDate - now;
+    const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
+    const countdownContainer = document.querySelector('.countdown-container');
+
+
+
         
         if (diffDays > 0) {
             countdownContainer.innerHTML = `
