@@ -1,6 +1,8 @@
 document.addEventListener('DOMContentLoaded', function() {
     // Datos de los partidos (simulados) CON RESULTADOS MANUALES
     const matchesData = {
+
+        
         1: {
             home: "España",
             away: "Colombia",
@@ -16,6 +18,10 @@ document.addEventListener('DOMContentLoaded', function() {
             homeLineup: ["Unai Simón", "Carvajal", "Pau Torres", "Laporte", "Gayà", "Rodri", "Pedri", "Gavi", "Olmo", "Morata", "Williams"],
             awayLineup: ["Ospina", "Mojica", "Cuesta", "Lucumí", "Perea", "Lerma", "Uribe", "Díaz", "James", "Borja", "Sinisterra"]
         },
+
+
+
+        
         2: {
             home: "Italia",
             away: "Brasil",
@@ -31,6 +37,9 @@ document.addEventListener('DOMContentLoaded', function() {
             homeLineup: ["Donnarumma", "Di Lorenzo", "Bastoni", "Acerbi", "Dimarco", "Barella", "Jorginho", "Verratti", "Chiesa", "Immobile", "Raspadori"],
             awayLineup: ["Alisson", "Danilo", "Marquinhos", "Militão", "Renan Lodi", "Casemiro", "Bruno Guimarães", "Neymar", "Rodrygo", "Vini Jr.", "Richarlison"]
         },
+
+
+        
         3: {
             home: "México",
             away: "Países Bajos",
@@ -46,6 +55,7 @@ document.addEventListener('DOMContentLoaded', function() {
             homeLineup: ["Ochoa", "J. Sánchez", "Montes", "Vásquez", "Gallardo", "Edson Álvarez", "Luis Chávez", "Tecatito", "Lozano", "Vega", "Jiménez"],
             awayLineup: ["Bijlow", "Dumfries", "Van Dijk", "De Ligt", "Aké", "De Jong", "Koopenmeiners", "Berghuis", "Gakpo", "Depay", "Bergwijn"]
         },
+
 
         
         4: {
@@ -79,27 +89,25 @@ document.addEventListener('DOMContentLoaded', function() {
             weather: "24°C - Noche despejada",
             homeLineup: ["Bono", "Hakimi", "Aguerd", "Saiss", "Mazraoui", "Amrabat", "Ounahi", "Ziyech", "Boufal", "En-Nesyri", "Aboukhlal"],
             awayLineup: ["Galíndez", "Preciado", "Torres", "Hincapié", "Estupiñán", "Gruezo", "Caicedo", "Méndez", "Sarmiento", "Plata", "Valencia"]
-        }
     },
 
 
-   6: {
-            home: "Mar",
-            away: "Ecu",
-            homeScore: 0,
-            awayScore: 0,
-            homeLogo: "img/Escudo-Marruecos.png",
-            awayLogo: "img/Escudo-Ecuador.png",
-            date: "Miércoles 9 de Abril, 2025",
-            time: "21:00",
-            stadium: "Estadio Ibn Batouta, Tánger",
-            referee: "Mustapha Ghorbal",
-            weather: "24°C - Noche despejada",
-            homeLineup: ["Bono", "Hakimi", "Aguerd", "Saiss", "Mazraoui", "Amrabat", "Ounahi", "Ziyech", "Boufal", "En-Nesyri", "Aboukhlal"],
-            awayLineup: ["Galíndez", "Preciado", "Torres", "Hincapié", "Estupiñán", "Gruezo", "Caicedo", "Méndez", "Sarmiento", "Plata", "Valencia"]
-        }
-    };
-
+   6: {  // <-- Este es el partido nuevo CORRECTAMENTE agregado
+        home: "Mar",
+        away: "Ecu",
+        homeScore: 0,
+        awayScore: 0,
+        homeLogo: "img/Escudo-Marruecos.png",
+        awayLogo: "img/Escudo-Ecuador.png",
+        date: "Miércoles 9 de Abril, 2025",
+        time: "21:00",
+        stadium: "Estadio Ibn Batouta, Tánger",
+        referee: "Mustapha Ghorbal",
+        weather: "24°C - Noche despejada",
+        homeLineup: ["Bono", "Hakimi", "Aguerd", "Saiss", "Mazraoui", "Amrabat", "Ounahi", "Ziyech", "Boufal", "En-Nesyri", "Aboukhlal"],
+        awayLineup: ["Galíndez", "Preciado", "Torres", "Hincapié", "Estupiñán", "Gruezo", "Caicedo", "Méndez", "Sarmiento", "Plata", "Valencia"]
+    }
+}; // <-- Aquí cierra correctamente el objeto matchesData
 
 
     
