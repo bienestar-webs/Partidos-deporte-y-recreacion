@@ -75,7 +75,7 @@ document.addEventListener('DOMContentLoaded', function() {
   // Contador para la fecha del partido (VERSIÓN CORREGIDA)
 function updateMatchDate() {
     // Corrección: Mes 4 = Mayo (0=Enero, 1=Feb, 2=Mar, 3=Abr, 4=Mayo)
-    const matchDate = new Date(2025, 4, 7);  // 7 de Mayo 2025
+  const matchDate = new Date("2025-05-07"); // 7 de Mayo 2025
     
     const now = new Date();
     const diffTime = matchDate - now;
