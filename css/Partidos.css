@@ -951,7 +951,29 @@ body {
     }
 }
 
+
+
+
+
 @media (max-width: 480px) {
+
+
+  .university-logo {
+
+       
+        left: -15px;
+    }
+
+
+.logo-img {
+
+    position: relative;
+   left: 5px;
+
+    }
+
+
+    
     body {
         padding: 0;
     }
